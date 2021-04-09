@@ -1,6 +1,43 @@
+/* The interactive header at the 
+top of the page */
+.header {
+    overflow: hidden;
+    background: #b7ceff;
+    padding: 15px 15px;
+  }
+  /* Stylizes the stuff in header */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    font-family:  'Arial';
+    font-size: 25px;
+    border-radius: 4px;    
+    padding: 12px;
+  }
+  /* Stylizes the product name */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
 
-    /*Changes highlighted color*/
+  /* Changes background button colo on hover */
+  .header a:hover {
+    background-color: rgb(215, 236, 253);
+    color: rgb(0, 0, 0);
+  }
+ 
+ /* Float the link section to the right */
+.header-right {
+  float: right;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ /*Changes highlighted color*/
     mark {
         background-color: rgb(190, 190, 241);
-    }
-}
+    }git 
