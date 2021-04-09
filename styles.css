@@ -5,30 +5,35 @@ top of the page */
     background: #b7ceff;
     padding: 15px 15px;
   }
+    /* Stylizes the product name */
+    .header-img {
+      margin: 1px;
+      padding-left: 5px;
+    }
+  
   /* Stylizes the stuff in header */
   .header a {
     float: left;
-    color: black;
+    color: rgb(0, 0, 0);
     text-align: center;
+    line-height: 35px;
     font-family:  'Arial';
     font-size: 25px;
-    border-radius: 4px;    
+    border-radius: 5px;    
     padding: 12px;
-  }
-  /* Stylizes the product name */
-  .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
+    transition: padding 2s;
   }
 
   /* Changes background button colo on hover */
   .header a:hover {
     background-color: rgb(215, 236, 253);
     color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.1s;
   }
  
  /* Float the link section to the right */
-.header-right {
+.nav-bar {
   float: right;
 }
 
