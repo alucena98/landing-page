@@ -31,6 +31,19 @@ top of the page */
 .header-right {
   float: right;
 }
+
+/* This condense the right-side of header
+below a certain width threshold */
+@media screen and (max-width: 700px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
  
  
  
@@ -40,4 +53,4 @@ top of the page */
  /*Changes highlighted color*/
     mark {
         background-color: rgb(190, 190, 241);
-    }git 
+    }
