@@ -37,6 +37,7 @@ top of the page */
   float: right;
 }
 
+
 /* This condense the right-side of header
 below a certain width threshold */
 @media screen and (max-width: 700px) {
