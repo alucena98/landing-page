@@ -2,13 +2,15 @@
 top of the page */
 .header {
     overflow: hidden;
-    background: #b7ceff;
+    background: #76dfec;
     padding: 15px 15px;
+    box-shadow: 0px 1px 1px rgb(186, 235, 255);
   }
     /* Stylizes the product name */
     .header-img {
       margin: 1px;
       padding-left: 5px;
+      padding-bottom: 5px;
     }
   
   /* Stylizes the stuff in header */
@@ -17,16 +19,21 @@ top of the page */
     color: rgb(0, 0, 0);
     text-align: center;
     line-height: 35px;
-    font-family:  'Arial';
+    font-family:  'Trebuchet MS', 'Arial';
     font-size: 25px;
     border-radius: 5px;    
     padding: 12px;
     transition: padding 2s;
   }
+  .header:hover {
+    box-shadow: 0px 2px 2px rgb(208, 255, 255);
+    transition: 0s linear;
+  
+  }
 
-  /* Changes background button colo on hover */
+  /* Changes background button color on hover */
   .header a:hover {
-    background-color: rgb(215, 236, 253);
+    background-color: rgb(172, 231, 255);
     color: rgb(0, 0, 0);
     text-decoration: none;
     transition: 0.1s;
@@ -37,7 +44,6 @@ top of the page */
   float: right;
 }
 
-
 /* This condense the right-side of header
 below a certain width threshold */
 @media screen and (max-width: 700px) {
@@ -46,13 +52,25 @@ below a certain width threshold */
     display: block;
     text-align: left;
   }
+
   .header-right {
     float: none;
   }
 }
- 
- 
- 
+  .page {
+    background-color:rgb(12, 92, 158);
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+ /* Embedded youtube video */
+  .video {
+    margin: 25px;
+  }
+  
+  .content {
+   background-color: transparent;
+  }
  
  
  
