@@ -10,7 +10,7 @@
 <body>
 <style>
     /* Styles certain buttons */
-input[type=button], input[type=submit], input[type=reset] {
+  input[type=submit], input[type=reset] {
   background: linear-gradient(#0698a8, #064549);
   box-shadow: 0px 1px 1px 1px rgb(45, 189, 182);
   border: none;
@@ -19,6 +19,18 @@ input[type=button], input[type=submit], input[type=reset] {
   text-decoration: none;
   margin: 2px;
   cursor: pointer;
+}
+  input[type=button] {
+  background: linear-gradient(#06eca0, #008080);
+  box-shadow: 0px 1px 3px rgb(21, 112, 66);
+  color: rgb(255, 255, 255);
+  outline: 2px solid rgb(45, 189, 182);
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  margin: 2px;
+  cursor: pointer;
+  font-family: 'Tahoma', 'Arial';
 }
 
 /* Stylizes the horizontal divider line */
@@ -32,6 +44,13 @@ hr {
 <div class="page">
     <!-- Interactive header at the top page-->
     <div class="header">
+      <div class="access-buttons">
+        <a href="">  
+         <input type="button" value="LOGIN"/>
+         <a href=""> 
+         <input type="button" value="SIGN UP"/>
+        </a>
+        </div>
         <div class="header-img">
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/MapleStory.SVG/1920px-MapleStory.SVG.png" 
         alt="MapleStory" width="155" height="60">
@@ -39,13 +58,23 @@ hr {
         alt="Mushroom" width="65" height="65">
         <img class="free-button" src="https://freepngimg.com/thumb/play_now_button/25780-4-play-now-button-photos.png"
         alt="Play" width="150" height="50">
-        
+
+
+        <!-- <div class="access-buttons">
+        <a href="">  
+         <input type="submit" value="Login"/>
+         <a href=""> 
+         <input type="submit" value="Sign up"/>
+        </a>
+        </div> -->
+
 
         <div class="nav-bar">
-          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#home">News</a>
           <a class="nav-link" href="#forums">Forums</a>
           <a class="nav-link" href="#about">About</a>
-          <a class="nav-link" href="#faq">FAQ</a>
+          <a class="nav-link" href="#faq">Guides</a>
+          <a class="nav-link" href="#faq">Support</a>
           </div>
         </div>
     </div>

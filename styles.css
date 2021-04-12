@@ -9,9 +9,9 @@
 top of the page */
 .header {
     overflow: hidden;
-    background: #76dfec;
+    background: linear-gradient(#30e8ee, #89dafa);
     padding: 15px 15px;
-    box-shadow: 0px 1px 1px rgb(186, 235, 255);
+    box-shadow: 0px 3px 5px rgb(71, 135, 155);
   }
 /* Stylizes the product name */
 .header-img {
@@ -20,42 +20,47 @@ top of the page */
       padding-bottom: 5px;
 }
   
-  /* Stylizes the stuff in header */
-  .header a {
+/* Stylizes the text links in header */
+.nav-bar a {
     float: left;
     color: rgb(0, 91, 133);
     text-align: center;
-    line-height: 35px;
+    line-height: 10px;
+    margin-top: 9px;
     font-family:  'Trebuchet MS', 'Arial';
     font-size: 20px;
     border-radius: 5px;    
     padding: 12px;
-    transition: padding 2s;
-    opacity: 0.8;
-  }
-  .header:hover {
-    box-shadow: 0px 2px 2px rgb(151, 225, 255);
-  }
+    opacity: 0.75;
+}
 
-  /* Changes background button color on hover */
-  .header a:hover {
-    background: linear-gradient(#b4dee6, #7ad3f7);
+/* Login/Signup at the top right */
+.access-buttons {
+  line-height: 11px;
+  display: flex;
+  float: right;
+  position: static;
+  margin-left: 100%;
+  margin-top: -2.1vh;
+  margin-right: -15px;
+}
+
+/* Changes background button color on hover */
+.header a:hover {
+    background: linear-gradient(#c5f5ff, #91e0ff);
     text-decoration: none;
     transition: 0.3s;
     opacity: 1;
     color: rgb(0, 77, 88);
-    text-shadow: 0px 0px 2px rgb(28, 72, 83)
-  }
-
- 
+    text-shadow: 0px 0px 1px rgb(28, 72, 83)
+}
  /* Float the link section to the right */
 .nav-bar {
   float: right;
 }
-
+/* Little logos on the top left */
 .header-img img {
   display: flex;
-  justify-content: center;
   float: left;
 }
 
@@ -63,13 +68,13 @@ top of the page */
 .free-button {
   display: flex;
   justify-content: center;
-  padding-left: 32%;
+  /* padding-left: 5vw; CHANGE THIS  */
   opacity: 0.7;
 }
 .free-button:hover {
-  opacity: 0;
+  opacity: 1;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 
@@ -111,6 +116,7 @@ iframe {
     border-radius: 5px;
     margin-left: 25px;
 } 
+
 
 /* Section title */
 .preview-title {
@@ -253,8 +259,9 @@ border-radius: 5px;
 }
 
 
-/* This condense the right-side of header
-below a certain width threshold */
+/* When the header condenses 
+below a certain width threshold,
+certain elements disappear or shift */
 @media screen and (max-width: 525px) {
   .header a {
     float: none;
@@ -267,6 +274,9 @@ below a certain width threshold */
   /* Hides the play free button */
   .header .free-button { 
     opacity: 0;
+    display: none;
+  }
+  .access-buttons {
     display: none;
   }
 }
