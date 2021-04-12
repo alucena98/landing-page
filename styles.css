@@ -1,8 +1,10 @@
 .page {
   width: 100%;
   height: 100%;
-  background: linear-gradient(#6edeec, #013d55);
+  background: linear-gradient(#62d6e6, #002a3a);
 }
+
+
 /* The interactive header at the 
 top of the page */
 .header {
@@ -11,12 +13,12 @@ top of the page */
     padding: 15px 15px;
     box-shadow: 0px 1px 1px rgb(186, 235, 255);
   }
-    /* Stylizes the product name */
-    .header-img {
+/* Stylizes the product name */
+.header-img {
       margin: 1px;
       padding-left: 5px;
       padding-bottom: 5px;
-    }
+}
   
   /* Stylizes the stuff in header */
   .header a {
@@ -65,75 +67,88 @@ top of the page */
   opacity: 0.7;
 }
 .free-button:hover {
-  opacity: 1;
+  opacity: 0;
   cursor: pointer;
   transition: 0.3s;
 }
-/* Welcome message */
+
+
+/* Welcome message at the top */
 .welcome {
   display: flex;
   justify-content: center;
   font-size: 35px;
   font-family: 'Arial', 'Times New Roman';
+  text-shadow: 1px 2px 3px rgb(51, 149, 156);
+  font-weight: bold;
   margin-top: 15px;
+  color: white;
 }
 
- /* Embedded youtube video */
- .video {
-   display: flex;
-   justify-content: initial;
-   margin: 25px;
- }
- 
- iframe {
-  box-shadow: 5px 5px 5px rgb(97, 223, 255);
- }
 
-.content {
+ /* The video at the top and description */
+.media-content {
  background-color: transparent;
 }
+ /* Embedded youtube video */
+ .video {
+  display: flex;
+  justify-content: initial;
+  margin: 25px;
+}
+iframe {
+  box-shadow: 5px 5px 5px rgb(97, 223, 255);
+ }
  .video-text {
+   font-size: 28px;
     display: flex;
     width: 100%;
-    padding-left: 20px;
+    padding-left: 10px;
     justify-content: center;
     color: rgb(238, 238, 238);
     text-shadow:1px 1px 2px rgb(0, 0, 0);
+    background-color:rgba(0, 31, 39, 0.2);
+    border-radius: 5px;
+    margin-left: 25px;
 } 
 
-.area-pics img {
-  justify-content: center;
-  padding-left: 10px;
-  margin-left: 80px;
-  margin-right: 10px;
-}
-
-.mobs-pics img {
-    justify-content: center;
-    padding-left: 10px;
-    margin-left: 80px;
-    margin-right: 10px;
-}
-.preview-info {
-  font-size: 25px;
+/* Section title */
+.preview-title {
+  font-size: 35px;
+  text-decoration: underline;
   color: white;
   text-shadow: 0px 1.5px 2px rgb(166, 212, 255);
   display: flex;
   justify-content: center;
 }
+/* The little text boxes under each section */
 .preview-desc {
   font-size: 17px;
+  line-height: 40px;
   color: white;
   justify-content: center;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
   text-shadow:1px 1px 2px rgb(0, 202, 175);
+  background-color:rgba(0, 31, 39, 0.2);
+  border-radius: 5px;
+  padding: 15px;
 }
-
-
-
-
-
+/* Stylizes each section's pictures */
+.area-pics img {
+  margin-left: 8.5vw;
+  margin-bottom: 10px;
+}
+.mobs-pics img {
+    justify-content: center;
+    padding-left: 10px;
+    margin-left: 8.5vw;
+}
+.community-pics img {
+  margin-left: 8.5vw;
+}
 
 
 /* Email Subscription Form */
@@ -147,7 +162,7 @@ top of the page */
  background: linear-gradient(#6ab8c2, #2d8db3);
  box-shadow: 0px 3px 3px 0px rgb(59, 114, 128);
  border-radius: 5px;
- /* outline: 1px solid rgb(255, 0, 0); */
+
 }
 .email-form p {
   display: flex;
@@ -156,27 +171,26 @@ top of the page */
   justify-content: center;
 }
 .form-container {
+  margin-top: 10px;
   display: flex;
   color: white;
 }
-
-
+/* The email text box within */
 #email {
   margin: 5px;
   border-top-color: transparent;
   border-left-color: transparent;
   border-right-color: transparent;
   border-radius: 10px;
-  background-color: rgb(109, 179, 211);
+  background-color: rgb(50, 89, 105);
   outline: none;
 }
-
 .form-buttons {
 display: flex;
 color: black;
 justify-content: initial;
 font-size: 15px;
-border-radius: 15px;
+border-radius: 5px;
 }
 .form-buttons a{
   display: flex;
@@ -184,6 +198,7 @@ border-radius: 15px;
   }
 
 
+/* Footer at the bottom */
 .footer {
   display: flex;
   height: 127px;
@@ -192,6 +207,7 @@ border-radius: 15px;
   background-color: rgb(0, 26, 43);
   bottom: 0;
 }
+/* Social media buttons here */
 .socials {
   display: flex;
   justify-content: center;
@@ -210,9 +226,10 @@ border-radius: 15px;
   justify-content: center;
   color: rgb(126, 126, 126);
   font-family: 'Times New Roman';
+  font-size: 12px;
+  margin-top: 4px;
 }
-
-/* Footer links */
+/* Footer links and stylization */
 .links-group {
   list-style-type: none;
   margin-top: 10px;
@@ -234,7 +251,6 @@ border-radius: 15px;
   display: flex;
   justify-content: space-between;
 }
-
 
 
 /* This condense the right-side of header
