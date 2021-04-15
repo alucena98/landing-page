@@ -136,6 +136,7 @@ iframe {
   line-height: 40px;
   color: white;
   justify-content: center;
+  text-align: center;
   margin-top: 15px;
   margin-bottom: 25px;
   margin-left: 10px;
@@ -145,6 +146,21 @@ iframe {
   border-radius: 5px;
   padding: 15px;
 }
+.bundle-desc {
+  font-size: 15px;
+  line-height: 40px;
+  color: white;
+  justify-content: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 25px;
+  text-align: center;
+  text-shadow:1px 1px 2px rgb(0, 202, 175);
+  background-color:rgba(0, 31, 39, 0.2);
+  border-radius: 5px;
+}
+
+
 /* Stylizes each section's pictures */
 .area-pics img {
   margin-left: 8.5vw;
@@ -158,6 +174,47 @@ iframe {
 .community-pics img {
   margin-left: 8.5vw;
 }
+.packs-pics img {
+  justify-content: center;
+  margin-left: 21%;
+}
+
+
+/* Packs section for the bundles */
+.packs {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3.5);
+  margin: 2%;
+  border: 2px solid rgb(12, 146, 163);
+  border-radius: 5px;
+  color: white;
+}
+.product .level {
+font-size: 20px;
+text-shadow: 0px 1.5px 2px rgb(166, 212, 255);
+}
+.product .btn {
+border: 0;
+margin: 15px 0;
+background-color: #72f7f7;
+}
+.product h2 {
+color:rgb(161, 216, 253);
+text-shadow: 0px 1px 3px rgb(216, 243, 250);
+}
+.product b {
+color: red;
+text-shadow: 0px 1px 2px rgb(255, 203, 203);
+}
 
 
 /* Email Subscription Form */
@@ -169,13 +226,13 @@ iframe {
  margin-left: 40%;
  width: 350px;
  background: linear-gradient(#6ab8c2, #2d8db3);
- box-shadow: 0px 3px 3px 0px rgb(59, 114, 128);
+ box-shadow: 0px 3px 3px 0px rgb(106, 178, 196);
  border-radius: 5px;
 
 }
 .email-form p {
   display: flex;
-  color: rgb(238, 238, 238);
+  color: rgb(255, 255, 255);
   text-shadow:1px 1px 2px rgb(97, 223, 255);
   justify-content: center;
 }
@@ -191,26 +248,22 @@ iframe {
   border-left-color: transparent;
   border-right-color: transparent;
   border-radius: 10px;
-  background-color: rgb(50, 89, 105);
+  background-color: rgb(112, 184, 212);
   outline: none;
 }
 .form-buttons {
 display: flex;
-color: black;
-justify-content: initial;
+justify-content: center;
 font-size: 15px;
 border-radius: 5px;
+margin: 5px;
 }
-.form-buttons a{
-  display: flex;
-  margin: 5px;
-  }
 
 
 /* Footer at the bottom */
 .footer {
   display: flex;
-  height: 127px;
+  height: 165px;
   flex-direction: column;
   justify-content: space-between;
   background-color: rgb(0, 26, 43);
@@ -277,6 +330,9 @@ certain elements disappear or shift */
   .access-buttons {
     display: none;
   }
+  .email-form {
+    display: none;
+  }
 }
 
 /* Hides the free play button when the 
@@ -299,4 +355,5 @@ certain screen width */
     justify-content: center;
     margin-left: 25px;
   }
+  
 }
