@@ -221,9 +221,9 @@ text-shadow: 0px 1px 2px rgb(255, 203, 203);
 .email-form {
  display: flex;  
  justify-content: center;
- margin-top: 15px;
- margin-bottom: 20px;
- margin-left: 40%;
+ margin-top: 25px;
+ margin-bottom: 35px;
+ margin-left: 39%;
  width: 350px;
  background: linear-gradient(#6ab8c2, #2d8db3);
  box-shadow: 0px 3px 3px 0px rgb(106, 178, 196);
@@ -345,7 +345,7 @@ given within a certain screen width*/
     }
 }
 /* Reduces the video description box under a
-certain screen width */
+certain screen width*/
 @media screen and (max-width: 945px) {
   .video-text { 
     overflow: initial;
@@ -355,5 +355,7 @@ certain screen width */
     justify-content: center;
     margin-left: 25px;
   }
-  
+  .email-form {
+    margin-left: 28%;
+  }
 }
